@@ -1,0 +1,14 @@
+<launch>
+  <node
+    pkg="plugin_loader_example"
+    type="plugin_loader_example.py"
+    name="plugin_loader_example"
+    output="screen"
+    >
+    <rosparam>
+      package: print_plugin
+      module_name: libprint_plugin
+      class_name: PrintPlugin
+    </rosparam>
+  </node>
+</launch>
